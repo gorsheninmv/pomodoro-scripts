@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+scriptpath=$(realpath -e "$0")
+directorypath=$(dirname "$scriptpath")
+pwshscriptpath="$directorypath/start.ps1"
+
+WSLENV=MMURI:MMTOKEN:MMUSERID/lw powershell.exe -File $pwshscriptpath
