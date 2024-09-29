@@ -1,0 +1,3 @@
+#! /usr/bin/osascript
+
+display notification "Session finished" with title "Pomodoro"
